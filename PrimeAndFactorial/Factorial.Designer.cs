@@ -110,6 +110,7 @@
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
+            MaximizeBox = false;
             Name = "Factorial";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Factorial";

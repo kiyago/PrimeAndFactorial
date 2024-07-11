@@ -77,6 +77,7 @@
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label1);
+            MaximizeBox = false;
             Name = "PrimeNo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PrimeNo";

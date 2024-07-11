@@ -17,17 +17,23 @@ namespace PrimeAndFactorial {
         private void button1_Click(object sender, EventArgs e) {
             int num;
             long fact;
-            if (textBox1.Text.Length > 2) {
-                MessageBox.Show("Numbers upto 25 are allowed");
-            }
-            num = Int32.Parse(textBox1.Text);
+            try {
+                if (textBox1.Text.Length > 2) {
+                    MessageBox.Show("Numbers upto 25 are allowed");
+                }
+                num = Int32.Parse(textBox1.Text);
 
-            fact = 1;
-            while (num >= 1 && num <= 25) {
-                fact *= num;
-                num--;
+                fact = 1;
+                while (num >= 1 && num <= 25) {
+                    fact *= num;
+                    num--;
+                }
+                textBox2.Text = fact + "";
             }
-            textBox2.Text = fact + "";
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e) {

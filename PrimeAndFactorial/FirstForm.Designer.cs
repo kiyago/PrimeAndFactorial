@@ -97,6 +97,7 @@
             Controls.Add(radioButton1);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            MaximizeBox = false;
             Name = "FirstForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FirstForm";
